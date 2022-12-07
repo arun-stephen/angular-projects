@@ -1,0 +1,17 @@
+a {
+  cursor: pointer
+}
+.box {
+  margin: 0px;
+  padding: 0px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeText {
+  margin: 8px;
+  padding-left: 980px;
+  padding-right: 10px;
+  color:gainsboro;
+  vertical-align: middle;
+}

@@ -1,0 +1,32 @@
+h4 {
+  text-align: center;
+  color:darkslategrey;
+}
+
+#grid {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 99.25%;
+  margin: 5px;
+}
+
+#grid td, #grid th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#grid th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color:darkslategrey;
+  color: white;
+}
+
+#grid tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#grid tr:hover {
+  background-color: #ddd;
+}

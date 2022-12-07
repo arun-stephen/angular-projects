@@ -1,0 +1,9 @@
+<div class="form-group">
+  <label for="placeholder">{{label}} :</label>
+  <select class="selectpicker" data-style="btn-warning" (change)="changeDropDown($event)">
+      <option disabled>{{title}}</option>
+      <option *ngFor="let value of data">
+        {{value[dataField]}}
+      </option>
+  </select>
+</div>

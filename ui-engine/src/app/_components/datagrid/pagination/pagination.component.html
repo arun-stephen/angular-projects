@@ -1,0 +1,6 @@
+<div id="paginator">
+  <span>{{currentPageString}}</span>
+  <button type="button" class="btn btn-primary" [disabled]="isFirst" (click)="OnPrevious()">&lt;</button>
+  <button type="button" class="btn btn-primary" [disabled]="isLast" (click)="onNext()">&gt;</button>
+</div>
+

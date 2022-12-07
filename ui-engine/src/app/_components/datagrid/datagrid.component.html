@@ -1,0 +1,13 @@
+<h4 *ngIf="showTitle">{{titleString}}</h4>
+<table id="grid">
+  <tr>
+    <th *ngFor="let column of headers">{{column}}</th>
+  </tr>
+  <tr *ngFor="let value of data; let i=index;" (click)="onGridSelected(value);">
+    <td *ngFor="let column of indexes">
+      {{value[column]}}
+    </td>
+  </tr>
+</table>
+<pagination *ngIf="showPagination" [recordsPerPage]="recordsPerPage" [totalRecords]="totalRecords"
+  (pageChanged)="onChangePage($event)"></pagination>
